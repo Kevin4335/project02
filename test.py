@@ -1,5 +1,7 @@
 import pygame
+import graphic_vars
 from pygame.locals import *
+from graphic_vars import*
 
 def init():
     pygame.init()
@@ -8,8 +10,7 @@ def init():
     running = True
     
     pygame.display.set_caption('Python Project')
-    Icon = pygame.image.load('./images/icon.png')
-    pygame.display.set_icon(Icon)
+    pygame.display.set_icon(pygame.image.load(start_icon))
     
     while running:
     # poll for events
